@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takshya Dog Jump Game</title>
+    <link rel="stylesheet" href="takshya.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="glow">🐶 Takshya Dog Jump Game 🎮</h1>
+    </header>
+
+    <!-- Google Login Button -->
+    <div class="login-container">
+        <div id="g_id_onload"
+            data-client_id="YOUR_GOOGLE_CLIENT_ID"
+            data-callback="handleCredentialResponse">
+        </div>
+        <div class="g_id_signin" data-type="standard"></div>
+    </div>
+
+    <!-- Start Button -->
+    <div class="button-container">
+        <button class="play-button" onclick="startGame()">🚀 Start Game 🐶</button>
+    </div>
+
+    <!-- Score -->
+    <div id="score-container">
+        Score: <span id="score">0</span> | Best: <span id="best-score">0</span>
+    </div>
+
+    <!-- Game Box -->
+    <div class="game-box">
+        <div id="dog"></div>
+        <div id="obstacle"></div>
+    </div>
+
+    <script src="takshya.js"></script>
+
+</body>
+</html>
